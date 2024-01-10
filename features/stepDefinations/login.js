@@ -1,4 +1,18 @@
-var { Given, When, Then } = require('cucumber');
+var { Given, When, Then, Before, BeforeAll, After, AfterAll} = require('cucumber');
+
+Before(()=>{
+        console.log("-------------------Inside a before Block-------------------")
+})
+
+BeforeAll(()=>{
+        console.log("-------------------Inside a before All Block-------------------")
+})
+After(()=>{
+        console.log("-------------------Inside a After Block-------------------")
+})
+AfterAll(()=>{
+        console.log("-------------------Inside a After All Block-------------------")
+})
 
 Given(/^user navigate to facebook website$/, function () {
 

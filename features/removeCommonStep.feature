@@ -15,6 +15,7 @@ Feature: Login
                 Then user entered "valid" password
                 Then user should "be" successfully logged in
 
+        @dev
         Scenario: In order to verify login to facebook as invalid user
 
                 Then user entered "invalid" username

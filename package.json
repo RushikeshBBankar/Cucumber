@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cucumber-js",
+    "dev": "npx cucumber-js --tags=@dev",
+    "valid": "npx cucumber-js --tags=@valid",
+    "invalid": "npx cucumber-js --tags=@invalid"
   },
   "author": "Cucumber",
   "license": "ISC",
